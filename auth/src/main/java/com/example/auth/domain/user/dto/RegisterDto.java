@@ -1,0 +1,11 @@
+package com.example.auth.domain.user.dto;
+
+import com.example.auth.domain.user.model.UserRole;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
+public record RegisterDto(@NotBlank String login,@NotBlank String password,@NotNull UserRole role) {
+
+}
